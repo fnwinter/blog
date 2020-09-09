@@ -6,9 +6,6 @@ categories: article
 tags: [docker]
 ---
 
-Docker Cheat sheet
-===
-
 ## 1. Install
 ---
 이전 docker 삭제
@@ -66,7 +63,7 @@ Requires=docker.service
 [Service]
 TimeoutStartSec=0
 Restart=always
-ExecStart=/usr/bin/docker start <process_name>
+ExecStart=/usr/bin/docker start process_name
 
 [Install]
 WantedBy=multi-user.target
