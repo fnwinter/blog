@@ -11,14 +11,12 @@ Docker Cheat sheet
 ## 1. Install
 ---
 이전 docker 삭제
-<pre>
-<code>
-$ sudo apt-get remove docker docker-engine docker.io containerd runc</code>
-</pre>
+<pre><code>
+$ sudo apt-get remove docker docker-engine docker.io containerd runc
+</code></pre>
 
 새로 설치
-<pre>
-<code>
+<pre><code>
 $ sudo apt-get update
 
 $ sudo apt-get install \
@@ -43,8 +41,8 @@ $ sudo add-apt-repository \
 
 $ sudo apt-get update
 
-$ sudo apt-get install docker-ce docker-ce-cli containerd.io</code>
-</pre>
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+</code></pre>
 
 ## 2. 이미지 만들기
 ---
@@ -52,8 +50,7 @@ https://docs.docker.com/engine/reference/builder/
 
 파일 이름이 Dockerfile 이어야 함.
 파일을 작성하고, "docker build ." 실행해 주면 됨.
-<pre>
-<code>
+<pre><code>
 FROM 기본 이미지
 MAINTAINER (deprecated)
 
@@ -72,13 +69,12 @@ WORKDIR 작업 폴더 설정
 ENV KEY VALUE 환경 변수 설정
 
 EXPOSE 8080 => 노출 할 port 번호 8080
-VOLUME ["/var/www"] => mount 할 path ("/var/www") 설정</code>
-</pre>
+VOLUME ["/var/www"] => mount 할 path ("/var/www") 설정
+</code></pre>
 
 ## 3. 명령어
 ---
-<pre>
-<code>
+<pre><code>
 컨테이너 시작
 $ sudo docker start CONTAINER
 
@@ -103,13 +99,12 @@ $ sudo docker run -it /bin/bash
 $ sudo docker ps
 
 Kill 메시지 보내기
-$ sudo docker kill CONTAINER</code>
-</pre>
+$ sudo docker kill CONTAINER
+</code></pre>
 
 ## 4. 컴퓨터 부팅 후 자동 시작
 ---
-<pre>
-<code>
+<pre><code>
 $ cd /etc/systemd/system
 $ sudo echo "
 [Unit]
@@ -133,8 +128,8 @@ $ sudo systemctl enable my_service
 $ sudo service start my_service
 
 서비스 종료
-$ sudo service stop my_service</code>
-</pre>
+$ sudo service stop my_service
+</code></pre>
 
 ## 5. Image 실행
 ---
@@ -144,15 +139,13 @@ https://docs.docker.com/engine/reference/commandline/run/
 
 ### 5.1 Volume mapping
 도커와 볼륨 연결하기
-<pre>
-<code>
-$ sudo docker run -v [HOST_PATH]:[DOCKER_PATH] CONTAINER</code>
-</pre>
+<pre><code>
+$ sudo docker run -v [HOST_PATH]:[DOCKER_PATH] CONTAINER
+</code></pre>
 
 ### 5.2. Port bind
 도커 이미지 만들 때, EXPOSE PORT_NO 가 있어야 함.
-<pre>
-<code>
+<pre><code>
 $ sudo docker run -p 127.0.0.1:80:8080 nginx:latest
-$ sudo docker run -p 127.0.0.1:[HOST_PORT]:[CONTAINER_PORT] nginx:latest</code>
-</pre>
+$ sudo docker run -p 127.0.0.1:[HOST_PORT]:[CONTAINER_PORT] nginx:latest
+</code></pre>
