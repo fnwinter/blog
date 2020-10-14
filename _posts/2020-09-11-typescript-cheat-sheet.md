@@ -23,7 +23,7 @@ tags: [typescript, web]
     let s : symbol = Symbol('a') -> symbol type으로 선언 유니크한 값으로 구분할 수 있게 한다. 주로 key에 사용
     var key_value: { [key:number] : boolean } = {10:true} -> [key:number] : boolean -> number type key에 boolean type 값의 dict
     private readonly read_only_property : number; -> property에서 사용하는 const
-    var array_number : number[] = {1,2,3} -> array를 [] 또는 Array<number> 로 type 정의
+    var array_number : number[] = {1,2,3} -> array를 [] 또는 Array&lt;number&gt; 로 type 정의
     enum Color { RED, BLUE, GREEN } -> enum 정의, 숫자 문자열 섞어서 선언도 가능
     var tuple_type : [number, string, number] = [10, "tuple", 20] -> tuple로 선언 가능
 </code></pre>
