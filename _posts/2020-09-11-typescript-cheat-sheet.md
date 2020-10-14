@@ -29,6 +29,13 @@ tags: [typescript, web]
 </code></pre>
 
 ## Function
+- 함수 선언 방법
+  * function FunctionName(parameters: number) : return_type { function_body }
+  * let FuncName = function (parameters: number) : return_type { function_body }
+  * let FuncName = function (parameters: number) : return_type => { function_body } -> arrow function 허용
+  * let FuncName = (parameters: number) => body
+<pre><code>
+</code></pre>
 
 ## Class and Interface
 
