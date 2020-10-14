@@ -14,8 +14,21 @@ tags: [typescript, web]
  - 대략 javascript에 super set으로 javascrpit를 strong type 언어로 만들기 위해 컴파일 타임에 type check하는 언어.
 
 ## Type
+- type
+<pre><code>
+    const block_scope = "live in block" -> const 는 바꿀 수 없는 상수로 block scope를 갖는다.
+    let _num_ : number = 10 -> number type으로 선언, let으로 block scope를 갖는다.
+    var _string_ : string = "global scope" -> string type으로 선언, var로 파일 내에서 global scope를 갖는다.
+    var _big_int_ : bigint = 1000n -> 큰 정수 표시, target이 es2020 이어야 빌드 된다.
+    let s : symbol = Symbol('a') -> symbol type으로 선언 유니크한 값으로 구분할 수 있게 한다. 주로 key에 사용
+    var key_value: { [key:number] : boolean } = {10:true} -> [key:number] : boolean -> number type key에 boolean type 값의 dict
+    private readonly read_only_property : number; -> property에서 사용하는 const
+    var array_number : number[] = {1,2,3} -> array를 [] 또는 Array<number> 로 type 정의
+    enum Color { RED, BLUE, GREEN } -> enum 정의, 숫자 문자열 섞어서 선언도 가능
+    var tuple_type : [number, string, number] = [10, "tuple", 20] -> tuple로 선언 가능
+</code></pre>
 
-## Funtion
+## Function
 
 ## Class and Interface
 
