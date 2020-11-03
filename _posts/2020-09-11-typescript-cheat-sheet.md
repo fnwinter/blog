@@ -128,12 +128,33 @@ class Memeber implements User {
 - @decorator 도 가능 experimentalDecorators : true로 tsconfig에서 수정
 
 ## Advanced Type
+- keyof 연산자
+- Record 타입
+  - Record&lt;T, U&gt; 이면 T에 U가 다 맵핑 된 값이어야 함.
+- 조건부 타입
+  - type IsString&lt;T&gt; = T extends string ? true | false
+  - type A = IsString&lt;string&gt; // true
+  - type B = IsString&lt;number&gt; // false
+- infer
+- Exclude <T, U> => T 타입 중에 U에 할당할 수 있는 타입
+- NonNullable <T> => T에서 null과 undefined를 제외한 버전
+- ReturnType <F> => 함수의 return type을 구한다.
+- InstanceType <C> => class 의 instance type을 구한다.
 
 ## Exception
+- return null 보다는 명시적인 throw Error 를...
+- throw new RangeError('...')
+- return type에 Error 타입을 넣어서 강제로 처리하도록..
+<pre><code>
+try {
 
-## Asynchronous event handling
+}
+catch(e) {
 
-## Module
+}
 
-
-
+function parse (birthday: string) : Date | InvalidDateFormatError {
+  ...
+}
+</code></pre>
+- Option&lt;T&gt; 은 Some&lt;T&gt; 또는 None 이 될 수 있다.
