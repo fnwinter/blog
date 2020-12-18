@@ -12,16 +12,21 @@ pip install virtualenv
 ~~~
 
 ## venv activate/deactivate
+- 환경 설치
 ~~~shell
 python -m virtualenv venv
+~~~
 
-Windows
-  venv\Scripts\activate.bat
-  venv\Scripts\deactivate.bat
+- Windows
+~~~shell
+venv\Scripts\activate.bat
+venv\Scripts\deactivate.bat
+~~~
 
-Linux
-  source ./venv/script/activate
-  source ./venv/script/deactivate
+- Linux
+~~~shell
+source ./venv/script/activate
+source ./venv/script/deactivate
 ~~~
 
 ## Freeze packages
