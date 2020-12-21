@@ -19,11 +19,11 @@ $ sudo apt-get remove docker docker-engine docker.io containerd runc
 ~~~shell
 $ sudo apt-get update
 
-$ sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg-agent \
+$ sudo apt-get install &#92;
+    apt-transport-https &#92;
+    ca-certificates &#92;
+    curl &#92;
+    gnupg-agent &#92;
     software-properties-common
 
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
