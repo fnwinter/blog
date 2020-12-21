@@ -30,7 +30,6 @@ tags: [typescript, web]
 
 ## Function
 - 함수 선언 방법
-
 ~~~javascript
   function FunctionName(parameters: number) : return_type { function_body }
   let FuncName = function (parameters: number) : return_type { function_body }
@@ -40,14 +39,15 @@ tags: [typescript, web]
 
 - 기본 파라미터
 ~~~javascript
-  * function log(message = "empty") {
+  function log(message = "empty") {
     // 이런식으로 message 에 기본 파라미터를 넣을 수 있다.
   }
-  * type Context = { name? : string, age? : number }
+  type Context = { name? : string, age? : number }
   function input(context = {}) {
     // 이런식으로 context에 파라미터를 전달할 수 있다.
   }
 ~~~
+
 - 함수 호출
 ~~~javascript
   * call, apply, bind
@@ -60,6 +60,7 @@ tags: [typescript, web]
   * log.bind(null, params)()
     * call 과 같은데 함수를 리턴
 ~~~
+
 - 제너레이터
 ~~~javascript
 function* createFibonacciGenerator() {
@@ -70,11 +71,13 @@ function* createFibonacciGenerator() {
 }
 ~~~
 이렇게 함수 이름 앞에 *가 있으면 제너레이터이고, 이터러블 반복자를 반환한다.
+
 - 함수 시그니처
 ~~~javascript
 type print_log = (message: string) => void
 ~~~
 이런 식으로 명시적인 선언을 할 수 있다.
+
 - 제너릭 타잎
 ~~~javascript
 function map<T,U>(array: T[], f: (item: T) => U) : u[] {
@@ -159,4 +162,5 @@ function parse (birthday: string) : Date | InvalidDateFormatError {
   ...
 }
 ~~~
+
 - Option&lt;T&gt; 은 Some&lt;T&gt; 또는 None 이 될 수 있다.
