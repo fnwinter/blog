@@ -79,7 +79,7 @@ type print_log = (message: string) => void
 - 제너릭 타잎
 ~~~javascript
 function map<T,U>(array: T[], f: (item: T) => U) : u[] {
-  ...
+    ...
 }
 ~~~
 
@@ -100,7 +100,7 @@ class Human extends Animal {
 - public : 누구나 접근 가능, default
 - private : 이 클래스의 인스턴스에서만 접근 가능
 - protected : 이 클래스와 서브클래스에서만 접근 가능
-
+- this type return이 된다. 그럼 Human().sleep(10).sleep(10) 계속 잘 수 있다.
 ~~~javascript
 abstract class Animal {
   abstract eat(foot : Food): void {}
@@ -110,22 +110,19 @@ abstract class Animal {
   }
 }
 ~~~
-- this type return이 된다. 그럼 Human().sleep(10).sleep(10) 계속 잘 수 있다.
-
+- 두개의 인터페이스가 합쳐진다.
 ~~~javascript
 interface User {
- name : string
+    name : string
 }
 
 interface User {
-  age : number
+    age : number
 }
 
 class Memeber implements User {
-
 }
 ~~~
-- 두개의 인터페이스가 합쳐진다.
 - 인터페이스는 런타임에 아무것도 안하는데 추상 클래스는 자바스크립트를 만든다.
 - 클래스, 인터페이스 둘 다 generic 선언을 할 수 있다.
 - @decorator 도 가능 experimentalDecorators : true로 tsconfig에서 수정
@@ -135,7 +132,7 @@ class Memeber implements User {
 - Record 타입
   - Record&lt;T, U&gt; 이면 T에 U가 다 맵핑 된 값이어야 함.
 - 조건부 타입
-  - type IsString&lt;T&gt; = T extends string ? true &vert; false
+  - type IsString&lt;T&gt; = T extends string ? true | false
   - type A = IsString&lt;string&gt; // true
   - type B = IsString&lt;number&gt; // false
 - infer
@@ -147,7 +144,7 @@ class Memeber implements User {
 ## Exception
 - return null 보다는 명시적인 throw Error 를...
 - throw new RangeError('...')
-- return type에 Error 타입을 넣어서 강제로 처리하도록..
+- return type에 Error 타입을 넣어서 강제로 처리하도록
 ~~~javascript
 try {
 
