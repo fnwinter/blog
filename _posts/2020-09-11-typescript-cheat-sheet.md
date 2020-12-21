@@ -62,16 +62,14 @@ tags: [typescript, web]
 ~~~
 
 - 제너레이터
-<pre><code>
 ~~~javascript
 function* createFibonacciGenerator() {
-  let a = 0;
-  while (true) {
-    yield a;
-  }
+    let a = 0;
+    while (true) {
+        yield a;
+    }
 }
 ~~~
-</code></pre>
 이렇게 함수 이름 앞에 *가 있으면 제너레이터이고, 이터러블 반복자를 반환한다.
 
 - 함수 시그니처
