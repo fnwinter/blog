@@ -15,7 +15,7 @@ tags: [typescript, web]
 
 ## Type
 - type
-<pre><code>
+~~~javascript
     const block_scope = "live in block" -> const 는 바꿀 수 없는 상수로 block scope를 갖는다.
     let _num_ : number = 10 -> number type으로 선언, let으로 block scope를 갖는다.
     var _string_ : string = "global scope" -> string type으로 선언, var로 파일 내에서 global scope를 갖는다.
@@ -26,7 +26,7 @@ tags: [typescript, web]
     var array_number : number[] = {1,2,3} -> array를 [] 또는 Array&lt;number&gt; 로 type 정의
     enum Color { RED, BLUE, GREEN } -> enum 정의, 숫자 문자열 섞어서 선언도 가능
     var tuple_type : [number, string, number] = [10, "tuple", 20] -> tuple로 선언 가능
-</code></pre>
+~~~
 
 ## Function
 - 함수 선언 방법
@@ -39,7 +39,7 @@ tags: [typescript, web]
 ~~~
 
 - 기본 파라미터
-<pre><code>
+~~~javascript
   * function log(message = "empty") {
     // 이런식으로 message 에 기본 파라미터를 넣을 수 있다.
   }
@@ -47,9 +47,9 @@ tags: [typescript, web]
   function input(context = {}) {
     // 이런식으로 context에 파라미터를 전달할 수 있다.
   }
-</code></pre>
+~~~
 - 함수 호출
-<pre><code>
+~~~javascript
   * call, apply, bind
   * log() 그냥 호출
   * log.apply(null, [param1, param2])
@@ -59,33 +59,33 @@ tags: [typescript, web]
     * 파라미터를 바로 전달
   * log.bind(null, params)()
     * call 과 같은데 함수를 리턴
-</code></pre>
+~~~
 - 제너레이터
-<pre><code>
+~~~javascript
 function* createFibonacciGenerator() {
   let a = 0;
   while (true) {
     yield a;
   }
 }
-</code></pre>
+~~~
 이렇게 함수 이름 앞에 *가 있으면 제너레이터이고, 이터러블 반복자를 반환한다.
 - 함수 시그니처
-<pre><code>
+~~~javascript
 type print_log = (message: string) => void
-</code></pre>
+~~~
 이런 식으로 명시적인 선언을 할 수 있다.
 - 제너릭 타잎
-<pre><code>
+~~~javascript
 function map<T,U>(array: T[], f: (item: T) => U) : u[] {
   ...
 }
-</code></pre>
+~~~
 
 ## Class and Interface
 
 - 클래스 선언
-<pre><code>
+~~~javascript
 class Human extends Animal {
   constructor (private readonly DNA: string) {
     this.DNA = DNA;
@@ -95,12 +95,12 @@ class Human extends Animal {
     super.sleep()
   }
 }
-</code></pre>
+~~~
 - public : 누구나 접근 가능, default
 - private : 이 클래스의 인스턴스에서만 접근 가능
 - protected : 이 클래스와 서브클래스에서만 접근 가능
 
-<pre><code>
+~~~javascript
 abstract class Animal {
   abstract eat(foot : Food): void {}
 
@@ -108,10 +108,10 @@ abstract class Animal {
       sleep(time)
   }
 }
-</code></pre>
+~~~
 - this type return이 된다. 그럼 Human().sleep(10).sleep(10) 계속 잘 수 있다.
 
-<pre><code>
+~~~javascript
 interface User {
  name : string
 }
@@ -123,7 +123,7 @@ interface User {
 class Memeber implements User {
 
 }
-</code></pre>
+~~~
 - 두개의 인터페이스가 합쳐진다.
 - 인터페이스는 런타임에 아무것도 안하는데 추상 클래스는 자바스크립트를 만든다.
 - 클래스, 인터페이스 둘 다 generic 선언을 할 수 있다.
@@ -147,7 +147,7 @@ class Memeber implements User {
 - return null 보다는 명시적인 throw Error 를...
 - throw new RangeError('...')
 - return type에 Error 타입을 넣어서 강제로 처리하도록..
-<pre><code>
+~~~javascript
 try {
 
 }
@@ -158,5 +158,5 @@ catch(e) {
 function parse (birthday: string) : Date | InvalidDateFormatError {
   ...
 }
-</code></pre>
+~~~
 - Option&lt;T&gt; 은 Some&lt;T&gt; 또는 None 이 될 수 있다.
