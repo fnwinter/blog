@@ -30,7 +30,7 @@ tags: [typescript, web]
 
 ## Function
 - 함수 선언 방법
-~~~typscript
+~~~javascript
   * function FunctionName(parameters: number) : return_type { function_body }
   * let FuncName = function (parameters: number) : return_type { function_body }
   * let FuncName = function (parameters: number) : return_type => { function_body } -> arrow function 허용
