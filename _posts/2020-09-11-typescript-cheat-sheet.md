@@ -145,7 +145,7 @@ class Memeber implements User {
 - Record 타입
   - Record&lt;T, U&gt; 이면 T에 U가 다 맵핑 된 값이어야 함.
 - 조건부 타입
-  - type IsString&lt;T&gt; = T extends string ? true &vert; false
+  - type IsString&lt;T&gt; = T extends string ? true &#x7c; false
   - type A = IsString&lt;string&gt; // true
   - type B = IsString&lt;number&gt; // false
 - infer
