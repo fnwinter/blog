@@ -113,6 +113,7 @@ abstract class Animal {
 ~~~
 
 - 두개의 인터페이스가 합쳐진다.
+
 ~~~javascript
 interface User {
     name : string
