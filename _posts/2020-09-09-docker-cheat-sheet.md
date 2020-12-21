@@ -16,7 +16,7 @@ $ sudo apt-get remove docker docker-engine docker.io containerd runc
 </code></pre>
 
 새로 설치
-<pre><code>
+~~~shell
 $ sudo apt-get update
 
 $ sudo apt-get install \
@@ -42,7 +42,7 @@ $ sudo add-apt-repository \
 $ sudo apt-get update
 
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io
-</code></pre>
+~~~
 
 ## 2. 이미지 만들기
 ---
