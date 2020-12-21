@@ -15,6 +15,7 @@ tags: [typescript, web]
 
 ## Type
 - type
+
 ~~~javascript
   const block_scope = "live in block" -> const 는 바꿀 수 없는 상수로 block scope를 갖는다.
   let _num_ : number = 10 -> number type으로 선언, let으로 block scope를 갖는다.
@@ -30,6 +31,7 @@ tags: [typescript, web]
 
 ## Function
 - 함수 선언 방법
+
 ~~~javascript
   function FunctionName(parameters: number) : return_type { function_body }
   let FuncName = function (parameters: number) : return_type { function_body }
@@ -38,6 +40,7 @@ tags: [typescript, web]
 ~~~
 
 - 기본 파라미터
+
 ~~~javascript
   function log(message = "empty") {
     // 이런식으로 message 에 기본 파라미터를 넣을 수 있다.
@@ -61,6 +64,7 @@ tags: [typescript, web]
 
 - 제너레이터
   * 이렇게 함수 이름 앞에 *가 있으면 제너레이터이고, 이터러블 반복자를 반환한다.
+
 ~~~javascript
 function* createFibonacciGenerator() {
     let a = 0;
@@ -71,12 +75,15 @@ function* createFibonacciGenerator() {
 ~~~
 
 - 함수 시그니처
+
 ~~~javascript
 type print_log = (message: string) => void
 ~~~
+
 이런 식으로 명시적인 선언을 할 수 있다.
 
 - 제너릭 타잎
+
 ~~~javascript
 function map<T,U>(array: T[], f: (item: T) => U) : u[] {
     ...
@@ -86,6 +93,7 @@ function map<T,U>(array: T[], f: (item: T) => U) : u[] {
 ## Class and Interface
 
 - 클래스 선언
+
 ~~~javascript
 class Human extends Animal {
   constructor (private readonly DNA: string) {
@@ -102,6 +110,7 @@ class Human extends Animal {
 - private : 이 클래스의 인스턴스에서만 접근 가능
 - protected : 이 클래스와 서브클래스에서만 접근 가능
 - this type return이 된다. 그럼 Human().sleep(10).sleep(10) 계속 잘 수 있다.
+
 ~~~javascript
 abstract class Animal {
   abstract eat(foot : Food): void {}
@@ -136,7 +145,7 @@ class Memeber implements User {
 - Record 타입
   - Record&lt;T, U&gt; 이면 T에 U가 다 맵핑 된 값이어야 함.
 - 조건부 타입
-  - type IsString&lt;T&gt; = T extends string ? true | false
+  - type IsString&lt;T&gt; = T extends string ? true &vert; false
   - type A = IsString&lt;string&gt; // true
   - type B = IsString&lt;number&gt; // false
 - infer
@@ -149,6 +158,7 @@ class Memeber implements User {
 - return null 보다는 명시적인 throw Error 를...
 - throw new RangeError('...')
 - return type에 Error 타입을 넣어서 강제로 처리하도록
+
 ~~~javascript
 try {
 
