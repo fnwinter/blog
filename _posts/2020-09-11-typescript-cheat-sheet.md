@@ -97,6 +97,7 @@ class Human extends Animal {
   }
 }
 ~~~
+
 - public : 누구나 접근 가능, default
 - private : 이 클래스의 인스턴스에서만 접근 가능
 - protected : 이 클래스와 서브클래스에서만 접근 가능
@@ -110,6 +111,7 @@ abstract class Animal {
   }
 }
 ~~~
+
 - 두개의 인터페이스가 합쳐진다.
 ~~~javascript
 interface User {
@@ -123,6 +125,7 @@ interface User {
 class Memeber implements User {
 }
 ~~~
+
 - 인터페이스는 런타임에 아무것도 안하는데 추상 클래스는 자바스크립트를 만든다.
 - 클래스, 인터페이스 둘 다 generic 선언을 할 수 있다.
 - @decorator 도 가능 experimentalDecorators : true로 tsconfig에서 수정
