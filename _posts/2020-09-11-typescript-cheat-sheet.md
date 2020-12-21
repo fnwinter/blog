@@ -16,16 +16,16 @@ tags: [typescript, web]
 ## Type
 - type
 ~~~javascript
-    const block_scope = "live in block" -> const 는 바꿀 수 없는 상수로 block scope를 갖는다.
-    let _num_ : number = 10 -> number type으로 선언, let으로 block scope를 갖는다.
-    var _string_ : string = "global scope" -> string type으로 선언, var로 파일 내에서 global scope를 갖는다.
-    var _big_int_ : bigint = 1000n -> 큰 정수 표시, target이 es2020 이어야 빌드 된다.
-    let s : symbol = Symbol('a') -> symbol type으로 선언 유니크한 값으로 구분할 수 있게 한다. 주로 key에 사용
-    var key_value: { [key:number] : boolean } = {10:true} -> [key:number] : boolean -> number type key에 boolean type 값의 dict
-    private readonly read_only_property : number; -> property에서 사용하는 const
-    var array_number : number[] = {1,2,3} -> array를 [] 또는 Array&lt;number&gt; 로 type 정의
-    enum Color { RED, BLUE, GREEN } -> enum 정의, 숫자 문자열 섞어서 선언도 가능
-    var tuple_type : [number, string, number] = [10, "tuple", 20] -> tuple로 선언 가능
+  const block_scope = "live in block" -> const 는 바꿀 수 없는 상수로 block scope를 갖는다.
+  let _num_ : number = 10 -> number type으로 선언, let으로 block scope를 갖는다.
+  var _string_ : string = "global scope" -> string type으로 선언, var로 파일 내에서 global scope를 갖는다.
+  var _big_int_ : bigint = 1000n -> 큰 정수 표시, target이 es2020 이어야 빌드 된다.
+  let s : symbol = Symbol('a') -> symbol type으로 선언 유니크한 값으로 구분할 수 있게 한다. 주로 key에 사용
+  var key_value: { [key:number] : boolean } = {10:true} -> [key:number] : boolean -> number type key에 boolean type 값의 dict
+  private readonly read_only_property : number; -> property에서 사용하는 const
+  var array_number : number[] = {1,2,3} -> array를 [] 또는 Array&lt;number&gt; 로 type 정의
+  enum Color { RED, BLUE, GREEN } -> enum 정의, 숫자 문자열 섞어서 선언도 가능
+  var tuple_type : [number, string, number] = [10, "tuple", 20] -> tuple로 선언 가능
 ~~~
 
 ## Function
@@ -49,19 +49,18 @@ tags: [typescript, web]
 ~~~
 
 - 함수 호출
-~~~javascript
-  call, apply, bind
-  log() 그냥 호출
-  log.apply(null, [param1, param2])
-    null 은 thisArg로 함수 안에서 this로 bind
+  * call, apply, bind
+  * log() 그냥 호출
+  * log.apply(null, [param1, param2])
+    * null 은 thisArg로 함수 안에서 this로 bind
     * 파라미터를 단일 배열로 전달
   * log.call(null, param1, param2)
-    * 파라미터를 바로 전달
+    파라미터를 바로 전달
   * log.bind(null, params)()
     * call 과 같은데 함수를 리턴
-~~~
 
 - 제너레이터
+  * 이렇게 함수 이름 앞에 *가 있으면 제너레이터이고, 이터러블 반복자를 반환한다.
 ~~~javascript
 function* createFibonacciGenerator() {
     let a = 0;
@@ -70,7 +69,6 @@ function* createFibonacciGenerator() {
     }
 }
 ~~~
-이렇게 함수 이름 앞에 *가 있으면 제너레이터이고, 이터러블 반복자를 반환한다.
 
 - 함수 시그니처
 ~~~javascript
@@ -137,7 +135,7 @@ class Memeber implements User {
 - Record 타입
   - Record&lt;T, U&gt; 이면 T에 U가 다 맵핑 된 값이어야 함.
 - 조건부 타입
-  - type IsString&lt;T&gt; = T extends string ? true | false
+  - type IsString&lt;T&gt; = T extends string ? true &vert; false
   - type A = IsString&lt;string&gt; // true
   - type B = IsString&lt;number&gt; // false
 - infer
