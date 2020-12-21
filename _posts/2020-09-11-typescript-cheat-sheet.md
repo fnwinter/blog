@@ -50,10 +50,10 @@ tags: [typescript, web]
 
 - 함수 호출
 ~~~javascript
-  * call, apply, bind
-  * log() 그냥 호출
-  * log.apply(null, [param1, param2])
-    * null 은 thisArg로 함수 안에서 this로 bind
+  call, apply, bind
+  log() 그냥 호출
+  log.apply(null, [param1, param2])
+    null 은 thisArg로 함수 안에서 this로 bind
     * 파라미터를 단일 배열로 전달
   * log.call(null, param1, param2)
     * 파라미터를 바로 전달
@@ -63,12 +63,14 @@ tags: [typescript, web]
 
 - 제너레이터
 ~~~javascript
+<pre><code>
 function* createFibonacciGenerator() {
   let a = 0;
   while (true) {
     yield a;
   }
 }
+</code></pre>
 ~~~
 이렇게 함수 이름 앞에 *가 있으면 제너레이터이고, 이터러블 반복자를 반환한다.
 
