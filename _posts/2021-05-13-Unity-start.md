@@ -31,21 +31,21 @@ float radian_angle = angle * Mathf.Deg2Rad;
 float sine = Mathf.Sin(radian_angle);
 float arcsine = Mathf.Asin(sine);
 
-// angle 과 degree가 같아야 함
-float degree = arcsine * Mathf.Rad2Deg;
+// angle 과 °가 같아야 함
+float ° = arcsine * Mathf.Rad2Deg;
 ~~~
 
-- 빗변이 1이면, x 축는 cos(theta), y 축은 sin(theta) 가 된다.
-- cos(t)^2 + sin(t)^2 = 1 이 됨
+- 빗변이 1이면, x 축는 cos(θ), y 축은 sin(θ) 가 된다.
+- cos(θ)^2 + sin(θ)^2 = 1 이 됨
 - 코사인 법칙
-  - a^2 = b^2 + c^2 - 2 * b * c * cos(theta)
+  - a^2 = b^2 + c^2 - 2 * b * c * cos(θ)
 
 - 라디안
-  - 90 degree = 1/2 pi
-  - 180 degree = pi
-  - 280 degree = 3/2 pi
-  - 원주를 구하는 공식이 C = 2 * pi * r(반지름)
-  - 반지름이 1인 경우엔 C = 2 * pi 즉 원주를 360로 나눈 것
+  - 90 ° = 1/2 π
+  - 180 ° = π
+  - 280 ° = 3/2 π
+  - 원주를 구하는 공식이 C = 2 * π * r (반지름)
+  - 반지름이 1인 경우엔 C = 2 * π 즉 원주를 360로 나눈 것
 
 - 덧셈 정리
   - P점이 (x, y) = (cos(a), sin(a)) 만큼 이동했을 때, 여기서 b 만큼 더 이동한다면, P' (cos(a+b), sin(a+b)) 의 좌표를 구하는 정리
@@ -57,16 +57,16 @@ float degree = arcsine * Mathf.Rad2Deg;
   - P' = (x * cos(b) - y * sin(b), y * cos(b) + x * sin(b))
 
 - 반각 공식
-  - cos(theta) = cos(theta / 2 + theta / 2)
-  - theta / 2 = t'
-  - cos(t' + t') = cos(t') ^ 2 - sin(t') ^ 2 -> 덧셈정리
-  - sin(t') ^ 2 + cos(t') ^ 2 = 1 을 대입
-  - = 1 - 2sin(t') ^ 2
-  - cos(t) = cos(t') ^ 2 - (1 - cos(t') ^ 2)
-  - = 2 * cos(t') ^ 2 - 1
-  - -> cos(t') ^ 2 = (cos(t) + 1) / 2
-  - -> sin(t') ^ 2 = (1 - cos(t)) / 2
+  - cos(θ) = cos(ɵ / 2 + θ / 2)
+  - θ / 2 = θ'
+  - cos(θ' + θ') = cos(θ') ^ 2 - sin(θ') ^ 2 -> 덧셈정리
+  - sin(θ') ^ 2 + cos(θ') ^ 2 = 1 을 대입
+  - = 1 - 2sin(θ') ^ 2
+  - cos(θ) = cos(θ') ^ 2 - (1 - cos(θ') ^ 2)
+  - = 2 * cos(θ') ^ 2 - 1
+  - -> cos(θ') ^ 2 = (cos(θ) + 1) / 2
+  - -> sin(θ') ^ 2 = (1 - cos(θ)) / 2
 
 - 사인파, 코사인파
-  - sin(0) = 0 이고 sin(pi / 2) = 1 주기는 2 * pi
-  - cos(0) = 1 이고 cos(pi / 2) = 1, cos(pi * 3/2) = -1
+  - sin(0) = 0 이고 sin(π / 2) = 1 주기는 2 * π
+  - cos(0) = 1 이고 cos(π / 2) = 1, cos(π * 3/2) = -1
