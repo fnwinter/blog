@@ -85,8 +85,9 @@ ValueError: duplicate values found in <enum 'Mistake'>: four -> three
 ...     GREEN = auto()
 ...
 >>> list(Color)
-[<Color.RED: 1>, <Color.BLUE: 2>, <Color.GREEN: 3>]
+[Color.RED: 1, Color.BLUE: 2, Color.GREEN: 3]
 </code></pre>
+
 이렇게 사용할 수 있습니다.
 
 # 출저
