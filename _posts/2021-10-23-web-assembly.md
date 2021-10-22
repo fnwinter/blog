@@ -167,12 +167,12 @@ c
 
 ## 6. 참고 자료
 그리고 마자막으로 찾은 rust/wasm의 다른 자료들 입니다.
-https://github.com/raphamorim/wasm-and-rust
-https://rustwasm.github.io/book/
-https://kripken.github.io/blog/binaryen/2018/04/18/rust-emscripten.html
-https://developer.mozilla.org/ko/docs/WebAssembly
-https://wasdk.github.io/WasmFiddle/
-https://github.com/mdn/webassembly-examples
+- [https://github.com/raphamorim/wasm-and-rust](https://github.com/raphamorim/wasm-and-rust)
+- [https://rustwasm.github.io/book/](https://rustwasm.github.io/book/)
+- [https://kripken.github.io/blog/binaryen/2018/04/18/rust-emscripten.html](https://kripken.github.io/blog/binaryen/2018/04/18/rust-emscripten.html)
+- [https://developer.mozilla.org/ko/docs/WebAssembly](https://developer.mozilla.org/ko/docs/WebAssembly)
+- [https://wasdk.github.io/WasmFiddle/](https://wasdk.github.io/WasmFiddle/)
+- [https://github.com/mdn/webassembly-examples](https://github.com/mdn/webassembly-examples)
 
 
 # Emscripten WebAssembly

@@ -91,5 +91,5 @@ ValueError: duplicate values found in <enum 'Mistake'>: four -> three
 이렇게 사용할 수 있습니다.
 
 # 출저
-  - https://docs.python.org/3/library/enum.html
-  - https://cpython-test-docs.readthedocs.io/en/latest/library/enum.html
+  - [https://docs.python.org/3/library/enum.html](https://docs.python.org/3/library/enum.html)
+  - [https://cpython-test-docs.readthedocs.io/en/latest/library/enum.html](https://cpython-test-docs.readthedocs.io/en/latest/library/enum.html)
