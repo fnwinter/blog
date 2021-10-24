@@ -147,22 +147,22 @@ cargo build --target=wasm32-unknown-emscripten --release
 site 폴더를 만들고 거기에 index.html 파일을 만든 다음 아래와 같이 html 코드 작성,
 그리고 compile 된 wasm_demo.js 를 site.js로 변경 후 브라우저에서 index.html 파일
 열면 아래와 같이 실행 된 결과를 볼 수 있습니다.
-c
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Wasm/Rust</title>
-  <script>
+<pre><code>
+<&zwj;!DOCTYPE html>
+<&zwj;html lang="en">
+<&zwj;head>
+  <&zwj;meta charset="UTF-8">
+  <&zwj;title>Wasm/Rust<&zwj;/title>
+  <&zwj;script>
     // This is read and used by `site.js`
     var Module = {
       wasmBinaryFile: "wasm_demo.wasm"
     }
-  </script>
-  <script src="site.js"></script>
-</head>
-<body></body>
-</html>
+  <&zwj;/script>
+  <&zwj;script src="site.js"><&zwj;/script>
+<&zwj;/head>
+<&zwj;body><&zwj;/body>
+<&zwj;/html>
 </code></pre>
 
 ## 6. 참고 자료
@@ -208,7 +208,7 @@ shared:WARNING: closure compiler will not be available
 
 ## hello_world.c 소스 코드 파일
 <pre><code>
-#include \<stdio.h\>
+#include <&zwj;stdio.h>
 
 int main() {
   printf("hello, world!\n");

@@ -56,10 +56,10 @@ Color.blue
 ...     four = 3
 ...
 Traceback (most recent call last):
-  File "<stdin>", line 2, in <module>
+  File "<&zwj;stdin>", line 2, in <&zwj;module>
   File "/usr/lib/python3.6/enum.py", line 836, in unique
     (enumeration, alias_details))
-ValueError: duplicate values found in <enum 'Mistake'>: four -> three
+ValueError: duplicate values found in <&zwj;enum 'Mistake'>: four -> three
 </code></pre>
 그리고 enum의 value를 자동적으로 증가 시켜 주기 위해서는 2.7 에서는 Enum을 상속 받은 AutoNumber라는 클래스를 만들어 줘야 합니다.
 <pre><code>
@@ -85,9 +85,8 @@ ValueError: duplicate values found in <enum 'Mistake'>: four -> three
 ...     GREEN = auto()
 ...
 >>> list(Color)
-[Color.RED: 1, Color.BLUE: 2, Color.GREEN: 3]
+ [<&zwj;Color.RED>: 1, <&zwj;Color.BLUE>: 2, <&zwj;Color.GREEN>: 3]
 </code></pre>
-
 이렇게 사용할 수 있습니다.
 
 # 출저
