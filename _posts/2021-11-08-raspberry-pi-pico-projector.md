@@ -73,7 +73,7 @@ tags: [raspberry pi, pico, projector, dlp, evm 2000]
   dpi_mode=87
 
   dpi_output_format=458773
-  dpi_timings=864 0 14 4 12 480 0 2 3 9 0 0 0 60 1 24883200 3
+  dpi_timings=864 0 0 0 12 480 0 2 3 9 0 0 0 60 1 24883200 3
   </code></pre>
   - 부팅 시에 실행 될 수 있도록 아래의 명령어 /etc/rc.local 파일에 저장
   - sudo mousepad /etc/rc.local
