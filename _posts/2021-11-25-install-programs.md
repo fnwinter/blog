@@ -12,7 +12,7 @@ tags: [new start]
     * winget install Notepad++ --exact
     * winget install 7-Zip --exact
     * winget install Paint.Net
-    * winget install Telegram -s winget3. python3 alias 설정 변경
+    * winget install Telegram -s winget3
     * winget install vscode
     * winget install Steam -s winget
     * winget install ridibooks

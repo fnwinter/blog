@@ -42,7 +42,7 @@ tags: [raspberry pi, pico, projector, dlp, evm 2000]
 
 ## HDMI 와 키보드를 연결 후 setting을 시작 합니다.
   - sudo apt-get full-upgrade
-  - sudo rasp-config
+  - sudo raspi-config
   - Interface Options에서 enable I2C 를 선택함, 동일하게 enable ssh 를 실행함
     ![setting](https://fnwinter.github.io/assets/img/projector/raspberry-config.JPG)
     ![setting2](https://fnwinter.github.io/assets/img/projector/i2c.JPG)
