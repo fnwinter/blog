@@ -30,6 +30,7 @@ tags: [raspberry pi, pico, projector, dlp, evm 2000]
    - 첨부한 사진 처럼 조립하면 됩니다. 간단 간단.
      ![assemble](https://fnwinter.github.io/assets/img/projector/real.jpg)
      ![print](https://fnwinter.github.io/assets/img/projector/projector_printer.jpg)
+     ![blender](https://fnwinter.github.io/assets/img/projector/blender.PNG)
    - blender 파일은 stl로 export 해서 gcode로 변환하면 된다.
      blender file download : [print_blender](https://fnwinter.github.io/assets/img/projector/projector.blend)
    - 점퍼 케이블을 연결하는 걸 좀 조심해야 되지만, 술 먹고 하는게 아닌 이상 어렵지 않습니다.
