@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About this blog
+permalink: /about
 ---
 
 ## 개발하고 있는 내용에 대해서 정리하는 블로그 입니다.
