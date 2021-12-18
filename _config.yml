@@ -12,6 +12,8 @@
 
 # jekyll-paginate configuration
 paginate:            5
+future:              true
+timezone:            TIMEZONE
 
 # Build settings
 markdown:            kramdown
