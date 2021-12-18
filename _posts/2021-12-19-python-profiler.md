@@ -46,7 +46,7 @@ In [9]: with open(file, 'rb') as f:
 Ordered by: cumulative time
 
 ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-1000    0.139    0.000    4.573    0.005 \test.py:7(get_md5)
+1000    0.139    0.000    4.573    0.005 test.py:7(get_md5)
 1000    3.497    0.003    3.497    0.003 {built-in method _hashlib.openssl_md5}
 1000    0.809    0.001    0.809    0.001 {method 'read' of '_io.BufferedReader' objects}
 1000    0.088    0.000    0.088    0.000 {built-in method io.open}
@@ -59,7 +59,7 @@ ncalls  tottime  percall  cumtime  percall filename:lineno(function)
 Ordered by: cumulative time
 
 ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-1000    0.135    0.000    4.227    0.004 \test.py:11(get_sha1)
+1000    0.135    0.000    4.227    0.004 test.py:11(get_sha1)
 1000    3.166    0.003    3.166    0.003 {built-in method _hashlib.openssl_sha1}
 1000    0.802    0.001    0.802    0.001 {method 'read' of '_io.BufferedReader' objects}
 1000    0.087    0.000    0.087    0.000 {built-in method io.open}
@@ -72,7 +72,7 @@ ncalls  tottime  percall  cumtime  percall filename:lineno(function)
 Ordered by: cumulative time
 
 ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-1000    0.136    0.000    8.106    0.008 \test.py:15(get_sha256)
+1000    0.136    0.000    8.106    0.008 test.py:15(get_sha256)
 1000    7.026    0.007    7.026    0.007 {built-in method _hashlib.openssl_sha256}
 1000    0.815    0.001    0.815    0.001 {method 'read' of '_io.BufferedReader' objects}
 1000    0.088    0.000    0.088    0.000 {built-in method io.open}
@@ -90,7 +90,7 @@ ncalls  tottime  percall  cumtime  percall filename:lineno(function)
 Ordered by: cumulative time
 
 ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-      1    0.003    0.003    0.311    0.311 \test.py:7(get_md5)
+      1    0.003    0.003    0.311    0.311 test.py:7(get_md5)
       1    0.219    0.219    0.219    0.219 {method 'read' of '_io.BufferedReader' objects}
       1    0.089    0.089    0.089    0.089 {built-in method _hashlib.openssl_md5}
       1    0.000    0.000    0.000    0.000 {built-in method io.open}
@@ -103,7 +103,7 @@ ncalls  tottime  percall  cumtime  percall filename:lineno(function)
 Ordered by: cumulative time
 
 ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-      1    0.004    0.004    0.112    0.112 \test.py:11(get_sha1)
+      1    0.004    0.004    0.112    0.112 test.py:11(get_sha1)
       1    0.083    0.083    0.083    0.083 {built-in method _hashlib.openssl_sha1}
       1    0.025    0.025    0.025    0.025 {method 'read' of '_io.BufferedReader' objects}
       1    0.000    0.000    0.000    0.000 {built-in method io.open}
@@ -116,7 +116,7 @@ ncalls  tottime  percall  cumtime  percall filename:lineno(function)
 Ordered by: cumulative time
 
 ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-      1    0.003    0.003    0.210    0.210 \test.py:15(get_sha256)
+      1    0.003    0.003    0.210    0.210 test.py:15(get_sha256)
       1    0.181    0.181    0.181    0.181 {built-in method _hashlib.openssl_sha256}
       1    0.026    0.026    0.026    0.026 {method 'read' of '_io.BufferedReader' objects}
       1    0.000    0.000    0.000    0.000 {built-in method io.open}
