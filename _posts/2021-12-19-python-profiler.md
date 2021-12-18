@@ -3,7 +3,7 @@ layout: post
 title: "python profiling md5 vs sha1"
 author: "jungjik.lee"
 categories: article
-tags: [python, md5, sha1, profiling]
+tags: [python, hash, profiling]
 ---
 
 # :snake: python profiler
