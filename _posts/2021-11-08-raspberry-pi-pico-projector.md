@@ -29,6 +29,9 @@ tags: [raspberry pi, pico, projector, dlp, evm 2000]
 ## 조립
    - 첨부한 사진 처럼 조립하면 됩니다. 간단 간단.
      ![assemble](https://fnwinter.github.io/assets/img/projector/real.jpg)
+     ![print](https://fnwinter.github.io/assets/img/projector/projector_printer.jpg)
+   - blender 파일은 stl로 export 해서 gcode로 변환하면 된다.
+     blender file download : [print_blender](https://fnwinter.github.io/assets/img/projector/projector.blend)
    - 점퍼 케이블을 연결하는 걸 좀 조심해야 되지만, 술 먹고 하는게 아닌 이상 어렵지 않습니다.
      ![pin](https://fnwinter.github.io/assets/img/projector/pin.png)
    - 아래 그림은 라즈베리 핀의 설명, 라즈베리파이의 3번 핀이 P1 의 27번 핀 VSYNC 에 연결하라는 뜻입니다.
