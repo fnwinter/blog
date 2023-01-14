@@ -8,6 +8,7 @@ tags: []
 
 # Float array to string
 - 갑자기 float array를 string으로 바꾸었다가 다시 받아서 float array로 바꿔야 하는 일이 생겼다.
+- ADB 로 float array를 보내고 다시 받아서 그 값을 써야 하는 이상한 요구 사항이 생겼다.
 
 ~~~C#
 using System;
