@@ -36,3 +36,4 @@ A와 B는 같은 레벨의 GameObject 이고, B는 C의 Parent이다.
 실행해 보면 A를 움직이면, A와 똑같은 위치에 C가 있는 것을 볼 수 있다.
 
 - :link: [Transform.InverseTransformPoint](https://docs.unity3d.com/ScriptReference/Transform.InverseTransformPoint.html)
+- :link: [Transform.InverseTransformDirection](https://docs.unity3d.com/ScriptReference/Transform.InverseTransformDirection.html)
