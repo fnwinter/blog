@@ -98,6 +98,11 @@ tags: [raspberry pi, pico, projector, dlp, evm 2000]
 ## 한글 지원
   - sudo apt install -y fonts-unfonts-core
 
+## Low battery 
+  - sudo nano /boot/config.txt
+    - avoid_warnings=1 추가
+  - sudo apt remove lxplug-ptbatt
+
 # 실제 동작 화면
   - ![steamlink](https://fnwinter.github.io/assets/img/projector/steam.jpg)
   - ![movie](https://fnwinter.github.io/assets/img/projector/movie.jpg)
