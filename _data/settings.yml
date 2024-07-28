@@ -14,7 +14,6 @@ menu:
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
 - {icon: 'github', link: 'https://www.github.com/fnwinter'}
-- {icon: 'twitter', link: 'https://twitter.com/fnwinter'}
 - {icon: 'linkedin', link: 'http://www.linkedin.com/in/jungjik.lee/'}
 - {icon: 'envelope', link: 'mailto:fnwinter@gmail.com'}
 - {icon: 'rss-square', link: '/feed.xml'}
