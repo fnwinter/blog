@@ -37,6 +37,8 @@ tags: [raspberry pi, pico, projector, dlp, evm 2000]
      ![pin](https://fnwinter.github.io/assets/img/projector/pin.png)
    - 아래 그림은 라즈베리 핀의 설명, 라즈베리파이의 3번 핀이 P1 의 27번 핀 VSYNC 에 연결하라는 뜻입니다.
      ![rasp_pin](https://fnwinter.github.io/assets/img/projector/rasp_pin.png)
+     ![rasp_pin2](https://fnwinter.github.io/assets/img/projector/RBP_Pin.png)
+   - 추가로 전원을 따로 전달하기 위해서 P2_6 를 EVM J3 에 연결이 필요하다.
 
 # 삽질 기록, 라즈베리파이 설정하기
 ## 라즈베리파이 OS 다운로드
